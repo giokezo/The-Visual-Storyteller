@@ -1,13 +1,31 @@
-# Data files
-data
+# Data (downloaded automatically by notebooks)
+data/
+*.zip
 
-# Model artifacts
+# Test images (user-provided, keep folder but ignore contents)
+notebooks/test_images/*
+!notebooks/test_images/.gitkeep
+
+# Model artifacts (generated during training)
 models/*.pth
-models/*.pt
-models/*.h5
+models/*.pkl
+models/*.png
 
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 .ipynb_checkpoints/
+
+# Environment
+.env
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
